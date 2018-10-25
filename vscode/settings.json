@@ -1,0 +1,12 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Tomorrow Night Bright",
+    "explorer.sortOrder": "type",
+    "editor.fontFamily": "\"ProFont for Powerline\",Regular",
+    "workbench.activityBar.visible": false,
+    "editor.cursorBlinking": "smooth",
+    "workbench.iconTheme": "vs-minimal",
+    "editor.fontSize": 16,
+    "window.menuBarVisibility": "toggle",
+    "workbench.statusBar.visible": false
+}

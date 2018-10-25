@@ -1,0 +1,36 @@
+#!/user/bin/bash
+
+#   fonts
+echo "Copying font files..."
+cd fonts
+cp Inconsolata.otf > /usr/local/share/fonts
+cp "ProFont For Powerline.ttf" > /usr/local/share/fonts
+cp fontawesome-free/use-on-desktop/* /usr/local/share/fonts
+cd ..
+
+echo "Caching fonts..."
+fc-cache -f -v
+
+#   i3
+echo "Copying files for i3..."
+cd i3
+cp config > ~/.config/i3
+cp  -r scripts > ~/.config/i3
+cd ..
+
+#   Terminator
+echo "Setting up Terminator..."
+mkdir -p $HOME/.config/terminator/plugins
+wget https://git.io/v5Zww -O $HOME"/.config/terminator/plugins/terminator-themes.py"
+cp /terminator/config > ~/.config/terminator
+
+#   Visual Studio Code
+echo "Setting up Code settings..."
+cp /vscode/settings.json > ~/.config/Code/User/
+
+#   Rofi
+echo "Setting up Rofi..."
+cp /rofi/config.rasi > ~/.config/rofi/
+
+#   because I'll make this mistake
+echo "Done! If something went wrong, try running as sudo"
