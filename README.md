@@ -1,6 +1,8 @@
 Paul's Dotfiles
 ================
 
+This readme serves more as a "note to self"
+
 ###  Before you start...
 Install a few things:
 
