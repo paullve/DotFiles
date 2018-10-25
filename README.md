@@ -6,13 +6,17 @@ This readme serves more as a "note to self"
 ###  Before you start...
 Install a few things:
 
-pip:
+
+
 > sudo apt install pip
-requests:
+
+
 > pip install requests
-rofi:
+
+
 > sudo apt install rofi
-terminator:
+
+
 > sudo apt install terminator
 
 ### Run setup script
